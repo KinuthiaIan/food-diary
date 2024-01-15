@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+/* Reset default styles */
+body, html, div, h1, h2, form, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #666;
+  background: #f9f9f9;
+}
+
+/* App container */
+.app-container,
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #993399; /* Purple color for the title */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Days buttons */
+.days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.day-btn {
+  background: none; /* Clear background for day buttons */
+  color: #333; /* Dark text color */
+  padding: 10px 15px;
+  border: 2px solid #333; /* Dark border */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.day-btn:hover {
+  background: #333; /* Dark background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 2px solid #ddd; /* Light border */
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+button#add-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #ff9933; /* Orange background for the button */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button#note-title2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #f854b4; /* Orange background for the button */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button#add-btn:hover {
+  background: #e57f00; /* Darker orange on hover */
+}
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5 10px;
+}
+.container2 {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+align-self: center;
+}
+.container3 {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+align-self: center;
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  line-height: 2;
+}
+
+header form {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+form > * {
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 7px;
+  border: 1px solid #777;
+  border-radius: 3px;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+}
+
+form button {
+  background-color: var(--color-sec);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background-color: var(--color-primary);
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.note {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+
+.note-counter {
+  font-size: 1.4rem;
+  background-color: var(--dark-grey);
+  padding: 3px;
+  display: inline-block;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.note-title {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+.note-btn {
+  margin: 5px 0;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: orangered;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: var(--color-primary);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  height: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}

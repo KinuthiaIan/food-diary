@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Diary App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>My Food Diary App</h1>
+        <div class="days">
+            <button class="day-btn" onclick="selectDay('Monday')">Monday</button>
+            <button class="day-btn" onclick="selectDay('Tuesday')">Tuesday</button>
+            <button class="day-btn" onclick="selectDay('Wednesday')">Wednesday</button>
+            <button class="day-btn" onclick="selectDay('Thursday')">Thursday</button>
+            <button class="day-btn" onclick="selectDay('Friday')">Friday</button>
+            <button class="day-btn" onclick="selectDay('Saturday')">Saturday</button>
+            <button class="day-btn" onclick="selectDay('Sunday')">Sunday</button>
+        </div>
+        <div id="selected-day">Select a day to view your food diary.</div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <header>
+        <div class="container">
+          
+          <div class="input-container">
+           
+        </div>
+          <form action="">
+            <button id="note-title2">Enter the day of the week</button>
+            <input type="text" id="note-title" placeholder="Re-type day of the week:  " />
+            <textarea
+              name=""
+              id="note-text"
+              cols="30"
+              rows="10"
+              placeholder="Food details: E.g today I ate 1 footlong sandwich, 3 sausages, 4 slices of pizza, and 1 popcorn. I also drank 2 beers and a Sprite "
+            ></textarea>
+            <button id="add-btn">Add entry</button>
+          </form>
+        </div>
+        
+      </header>
+      <section>
+        <div class="container2">
+        <div id="nutritionTable" class="hidden">
+          <table>
+              <tr>
+                  <th>Image</th>
+                  <th>Qty</th>
+                  <th>Unit</th>
+                  <th>Food</th>
+                  <th>Calories</th>
+                  <th>Weight</th>
+                  <th>Food Group</th>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      </section>
+      <section>
+        <div class="container3">
+          <h2>Your Sunday meals</h2>
+          <hr />
+          <button class="clear note-btn">Delete all Meals</button>
+          <div id="notes">
+            <!-- <div class="note">
+              <p class="note-counter">Note 1</p>
+              <h3 class="note-title">Hello World</h3>
+              <p class="note-text">My name is Ian.</p>
+              <button class="note-btn">Delete Note</button>
+              <button class="note-btn edit-btn">Edit Note</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+  
+      <script src="script.js"></script>
+</body>
+</html>
